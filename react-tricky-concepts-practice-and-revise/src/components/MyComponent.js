@@ -4,13 +4,19 @@ function MyComponent() {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
-    console.log("before setTimeout!!");
-    setTimeout(() => {
-      setCount((prevValue) => prevValue + 1);
-      // setCount(count + 1);
-      console.log("State updated:", count);
-    }, 1000);
-    console.log("after setTimeout");
+    // console.log("before setTimeout!!");
+    // setTimeout(() => {
+    //   setCount((prevValue) => prevValue + 1);
+    //   setCount(count + 1);
+    //   console.log("State updated:", count);
+    // }, 1000);
+    // console.log("after setTimeout");
+
+    // setCount((prevValue) => prevValue + 1);
+    // setCount((prevValue) => prevValue + 1);
+    setCount(count + 1);
+    setCount(count + 1);
+    console.log(count);
   };
 
   const resetHandler = () => setCount(0);
