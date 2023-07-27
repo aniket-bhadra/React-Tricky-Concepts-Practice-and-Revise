@@ -4,10 +4,13 @@ function MyComponent() {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
+    console.log("before setTimeout!!");
     setTimeout(() => {
       setCount(count + 1);
+      // setCount((prevValue) => prevValue + 1);
       console.log("State updated:", count);
     }, 1000);
+    console.log("after setTimeout");
   };
 
   return (
