@@ -2,20 +2,25 @@ import React, { useState } from "react";
 
 function MyComponent3() {
   const [count, setCount] = useState(0);
+  console.log(`[${new Date().toISOString()}] count real value is: ${count}`);
 
   function asynchrounusMine() {
-    console.log("before state Update");
+    console.log(`[${new Date().toISOString()}] before state update`);
     setCount(count + 2);
-    console.log("after state Update");
+    console.log(`[${new Date().toISOString()}] after state update`);
   }
 
   function hello() {
-    console.log("hello from hello function");
+    const message = "hello from hello function";
+    console.log(`[${new Date().toISOString()}] ${message}`);
   }
 
   const handleClick = () => {
     asynchrounusMine();
     hello();
+    console.log(
+      `[${new Date().toISOString()}] count value inside handleClick: ${count}`
+    );
   };
 
   const resetHandler = () => setCount(0);
@@ -42,7 +47,9 @@ function MyComponent3() {
           textAlign: "center",
         }}
       >
-        <h2 style={{ color: "#333" }}>emulating the plain js behaviour with react</h2>
+        <h2 style={{ color: "#333" }}>
+          emulating the plain js behaviour with react
+        </h2>
         <p style={{ fontSize: "36px", fontWeight: "bold", margin: "20px 0" }}>
           Count: {count}
         </p>
