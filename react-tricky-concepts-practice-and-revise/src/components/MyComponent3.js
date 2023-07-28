@@ -4,9 +4,9 @@ function MyComponent3() {
   const [count, setCount] = useState(0);
 
   function asynchrounusMine() {
-    console.log("before setTimeout");
+    console.log("before state Update");
     setCount(count + 2);
-    console.log("after setTimeout");
+    console.log("after state Update");
   }
 
   function hello() {
@@ -42,7 +42,7 @@ function MyComponent3() {
           textAlign: "center",
         }}
       >
-        <h2 style={{ color: "#333" }}>testing plain js</h2>
+        <h2 style={{ color: "#333" }}>emulating the plain js behaviour with react</h2>
         <p style={{ fontSize: "36px", fontWeight: "bold", margin: "20px 0" }}>
           Count: {count}
         </p>
