@@ -44,7 +44,7 @@ function MyComponent2() {
           textAlign: "center",
         }}
       >
-        <h2 style={{ color: "#333" }}>Updated the State Using Function Form</h2>
+        <h2 style={{ color: "#333" }}>testing plain js</h2>
         <p style={{ fontSize: "36px", fontWeight: "bold", margin: "20px 0" }}>
           Count: {count}
         </p>
