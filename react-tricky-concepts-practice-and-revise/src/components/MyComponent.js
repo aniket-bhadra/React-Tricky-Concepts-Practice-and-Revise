@@ -2,17 +2,23 @@ import React, { useState } from "react";
 
 function MyComponent() {
   const [count, setCount] = useState(0);
+  let a = 0;
+  console.log(a);
 
   const handleClick = () => {
     console.log("before setTimeout!!");
     setTimeout(() => {
       // setCount((prevValue) => prevValue + 1);
       setCount(count + 1);
+      for (var i = 0; i < 1000; i++) {
+        a = a + i;
+        console.log(a)
+      }
       console.log("State updated:", count);
     }, 1000);
-    let a=0
-    for(let i=0; i<100000; i++){
-       a=0;
+
+    for (let i = 0; i < 1000; i++) {
+      console.log((i += i));
     }
     console.log("after setTimeout");
 
