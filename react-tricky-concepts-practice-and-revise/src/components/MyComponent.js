@@ -3,30 +3,31 @@ import React, { useState } from "react";
 function MyComponent() {
   const [count, setCount] = useState(0);
   let a = 0;
-  console.log(a);
+  // console.log(a);
+  console.log(`[${new Date().toISOString()}] ${count}`);
 
   const handleClick = () => {
-    console.log("before setTimeout!!");
-    setTimeout(() => {
-      // setCount((prevValue) => prevValue + 1);
-      setCount(count + 1);
-      for (var i = 0; i < 1000; i++) {
-        a = a + i;
-        console.log(a)
-      }
-      console.log("State updated:", count);
-    }, 1000);
+    // console.log("before setTimeout!!");
+    // setTimeout(() => {
+    //   // setCount((prevValue) => prevValue + 1);
+    //   setCount(count + 1);
+    //   for (var i = 0; i < 1000; i++) {
+    //     a = a + i;
+    //     console.log(a)
+    //   }
+    //   console.log("State updated:", count);
+    // }, 1000);
 
-    for (let i = 0; i < 1000; i++) {
-      console.log((i += i));
-    }
-    console.log("after setTimeout");
+    // for (let i = 0; i < 1000; i++) {
+    //   console.log((i += i));
+    // }
+    // console.log("after setTimeout");
 
     // setCount((prevValue) => prevValue + 1);
     // setCount((prevValue) => prevValue + 1);
-    // setCount(count + 1);
-    // setCount(count + 1);
-    // console.log(count);
+    setCount(count + 1);
+    setCount(count + 1);
+    console.log(`[${new Date().toISOString()}] before state update ${count}`);
   };
 
   const resetHandler = () => setCount(0);
