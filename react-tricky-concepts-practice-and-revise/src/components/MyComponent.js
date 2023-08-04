@@ -22,12 +22,12 @@ function MyComponent() {
     //   console.log((i += i));
     // }
     // console.log("after setTimeout");
-
-    // setCount((prevValue) => prevValue + 1);
-    // setCount((prevValue) => prevValue + 1);
     setCount(count + 1);
     setCount(count + 1);
-    console.log(`[${new Date().toISOString()}] before state update ${count}`);
+    setCount((prevValue) => prevValue + 1);
+    setCount((prevValue) => prevValue + 1);
+    
+    console.log(`[${new Date().toISOString()}] after state update ${count}`);
   };
 
   const resetHandler = () => setCount(0);

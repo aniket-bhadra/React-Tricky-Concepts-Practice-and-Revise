@@ -6,9 +6,9 @@ import MyComponent3 from './components/MyComponent3';
 function App() {
   return (
     <div>
-     {/* <MyComponent /> */}
+     <MyComponent />
      {/* <MyComponent2 /> */}
-     <MyComponent3 />
+     {/* <MyComponent3 /> */}
     </div>
   );
 }
