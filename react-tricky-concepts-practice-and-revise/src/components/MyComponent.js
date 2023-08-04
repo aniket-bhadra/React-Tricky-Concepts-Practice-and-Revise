@@ -4,7 +4,7 @@ function MyComponent() {
   const [count, setCount] = useState(0);
   let a = 0;
   // console.log(a);
-  console.log(`[${new Date().toISOString()}] ${count}`);
+  console.log(`[${new Date().toISOString()}] ${count}`); 
 
   const handleClick = () => {
     // console.log("before setTimeout!!");
@@ -22,10 +22,11 @@ function MyComponent() {
     //   console.log((i += i));
     // }
     // console.log("after setTimeout");
-    setCount(count + 1);
-    setCount(count + 1);
+    
     setCount((prevValue) => prevValue + 1);
     setCount((prevValue) => prevValue + 1);
+    setCount(count + 1);
+    setCount(count + 1);
     
     console.log(`[${new Date().toISOString()}] after state update ${count}`);
   };
