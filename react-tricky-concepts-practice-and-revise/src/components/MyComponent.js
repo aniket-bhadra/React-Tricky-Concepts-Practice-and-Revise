@@ -25,7 +25,7 @@ function MyComponent() {
     
     setCount((prevValue) => prevValue + 1);
     setCount((prevValue) => prevValue + 1);
-    setCount(count + 1);
+    // setCount(count + 1);
     setCount(count + 1);
     
     console.log(`[${new Date().toISOString()}] after state update ${count}`);
