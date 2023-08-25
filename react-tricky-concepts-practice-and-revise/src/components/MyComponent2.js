@@ -3,11 +3,15 @@ import React, { useState } from "react";
 function MyComponent2() {
   const [count, setCount] = useState(0);
 
+  console.log(`[${new Date().toISOString()}] outside of eventHandler ${count}`); 
+
   function asynchrounusMine() {
     console.log("before setTimeout");
+    setCount(count + 1);
     setTimeout(() => {
-      console.log("this is setTimeout");
-    }, 1000);
+      console.log(`[${new Date().toISOString()}] this is setTimeout`); 
+
+    },0);
     console.log("after setTimeout");
   }
 
@@ -18,6 +22,8 @@ function MyComponent2() {
   const handleClick = () => {
     asynchrounusMine();
     hello();
+    console.log(`[${new Date().toISOString()}] ${count}`); 
+
   };
 
   const resetHandler = () => setCount(0);
