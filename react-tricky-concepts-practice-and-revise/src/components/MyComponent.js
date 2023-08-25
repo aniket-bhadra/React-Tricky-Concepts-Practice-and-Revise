@@ -7,24 +7,27 @@ function MyComponent() {
   console.log(`[${new Date().toISOString()}] ${count}`); 
 
   const handleClick = () => {
-    // console.log("before setTimeout!!");
-    // setTimeout(() => {
-    //   // setCount((prevValue) => prevValue + 1);
-    //   setCount(count + 1);
-    //   for (var i = 0; i < 1000; i++) {
-    //     a = a + i;
-    //     console.log(a)
-    //   }
-    //   console.log("State updated:", count);
-    // }, 1000);
+    console.log(`[${new Date().toISOString()}] before setTimeout!!`);
+    setTimeout(() => {
+      // setCount((prevValue) => prevValue + 1);
+      setCount(count + 1);
+      for (var i = 0; i < 1000; i++) {
+        a = a + i;
+        console.log(a)
+      }
+      console.log(`[${new Date().toISOString()}] after STATE UPDATED--${count}!`);
+    }, 1000);
 
-    // for (let i = 0; i < 1000; i++) {
-    //   console.log((i += i));
-    // }
-    // console.log("after setTimeout");
+    console.log(`[${new Date().toISOString()}] after setTimeout!!`);
+
+    for (let i = 0; i < 1000; i++) {
+      console.log((i += i));
+    }
+
+    console.log(`[${new Date().toISOString()}] after forloop!!`);
     
     setCount(count + 1);
-    setCount((prevValue) => prevValue + 1);
+    // setCount((prevValue) => prevValue + 1);
     // setCount((prevValue) => prevValue + 1);
     // setCount(count + 1);
     
