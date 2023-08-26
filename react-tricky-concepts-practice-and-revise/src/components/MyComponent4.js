@@ -36,7 +36,7 @@ function MyComponent4() {
     console.log(`[${new Date().toISOString()}]---FN7`)
   }
 
-  const handleClick = () => {
+  const handleClick =  () => {
     asynchrounusMine();
     hello();
     FN1()
