@@ -8,9 +8,9 @@ import MyComponent5 from './components/MyComponent5';
 function App() {
   return (
     <div>
-     {/* <MyComponent /> */}
+     <MyComponent />
      {/* <MyComponent4 /> */}
-     <MyComponent5 />
+     {/* <MyComponent5 /> */}
      {/* <MyComponent2 /> */}
      {/* <MyComponent3 /> */}
     </div>

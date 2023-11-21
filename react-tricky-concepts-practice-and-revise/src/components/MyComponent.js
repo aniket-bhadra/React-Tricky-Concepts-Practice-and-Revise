@@ -4,13 +4,13 @@ function MyComponent() {
   const [count, setCount] = useState(0);
   let a = 0;
   // console.log(a);
-  console.log(`[${new Date().toISOString()}] ${count}`); 
+  console.log(`[${new Date().toISOString()}] outside ${count}`); 
 
   const handleClick = () => {
     console.log(`[${new Date().toISOString()}] before setTimeout!!`);
     setTimeout(() => {
-      // setCount((prevValue) => prevValue + 1);
-      setCount(count + 1);
+      setCount((prevValue) => prevValue + 1);
+      // setCount(count + 1);
       for (var i = 0; i < 1000; i++) {
         a = a + i;
         console.log(a)
