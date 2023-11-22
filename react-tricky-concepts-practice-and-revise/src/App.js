@@ -15,13 +15,13 @@ function App() {
       {/* <MyComponent /> */}
       {/* <MyComponent4 /> */}
       {/* <MyComponent5 /> */}
-      {/* <MyComponent2 /> */}
+      <MyComponent2 />
       {/* <MyComponent3 /> */}
       {/* <TestingRerendering /> */}
       {/* <TestingRerendering2>
         <Skeleten />
       </TestingRerendering2> */}
-      <Loader2 />
+      {/* <Loader2 /> */}
     </div>
   );
 }

@@ -11,12 +11,12 @@ const AuthProvider = ({ children }) => {
   const [show, setShow] = useState(5);
   const [seen, setSeen] = useState("seen");
 
-  console.log("inside authProvider");
+  // console.log("inside authProvider");
 
-  useEffect(() => {
-    console.log("inside authProvider useEffect");
-    setShow(25);
-  }, []);
+  // useEffect(() => {
+  //   console.log("inside authProvider useEffect");
+  //   setShow(25);
+  // }, []);
 
   return (
     <appContext.Provider value={{ show, setShow, seen, setSeen }}>
