@@ -4,8 +4,9 @@ import { useAppState } from "./conext/Auth";
 
 const Loader2 = () => {
   console.log("inside Loader2");
-  const { show } = useAppState();
-  return <div>{show}</div>;
+  useAppState();
+  //   console.log("the value of show-- ", show);
+  return <div>loader......</div>;
 };
 
 export default Loader2;
