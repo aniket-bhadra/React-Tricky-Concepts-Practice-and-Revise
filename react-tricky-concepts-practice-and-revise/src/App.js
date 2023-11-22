@@ -4,8 +4,8 @@ import MyComponent3 from "./components/MyComponent3";
 import MyComponent4 from "./components/MyComponent4";
 import MyComponent5 from "./components/MyComponent5";
 import TestingRerendering from "./components/TestingRerendering";
-import sidebar from "./components/sidebar";
 import TestingRerendering2 from "./components/TestingRerendering2";
+import Skeleten from "./components/Skeleten";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       {/* <MyComponent3 /> */}
       {/* <TestingRerendering /> */}
       <TestingRerendering2>
-        <sidebar />
+        <Skeleten />
       </TestingRerendering2>
     </div>
   );

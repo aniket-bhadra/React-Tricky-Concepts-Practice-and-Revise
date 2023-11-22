@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Skeleten = () => {
-  return (
-    <div>Skeleten</div>
-  )
-}
+  console.log("inside Skeleten");
+  return <div>Skeleten</div>;
+};
 
-export default Skeleten
+export default Skeleten;

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Loader2 = () => {
-  return (
-    <div>Loader2</div>
-  )
-}
+  console.log("inside Loader2");
+  return <div>Loader2</div>;
+};
 
-export default Loader2
+export default Loader2;
