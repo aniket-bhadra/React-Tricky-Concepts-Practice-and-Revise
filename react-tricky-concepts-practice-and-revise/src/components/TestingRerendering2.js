@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const TestingRerendering2 = () => {
-  return (
-    <div>TestingRerendering2</div>
-  )
-}
+const TestingRerendering2 = ({ children }) => {
+  return <div>{children}</div>;
+};
 
-export default TestingRerendering2
+export default TestingRerendering2;
